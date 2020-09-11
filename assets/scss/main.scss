@@ -1,0 +1,22 @@
+@font-face {
+  font-family: 'Cassannet Plus';
+  src: url('../fonts/CassannetPlus.woff2') format('woff2'),
+    url('../fonts/CassannetPlus.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Cassannet Plus';
+  src: url('../fonts/CassannetPlus-Ultra.woff2') format('woff2'),
+    url('../fonts/CassannetPlus-Ultra.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  background: white;
+  font-family: 'Cassannet Plus';
+}
