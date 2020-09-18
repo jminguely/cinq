@@ -16,7 +16,176 @@
   font-display: swap;
 }
 
+$white: #fff;
+$black: #333;
+
+.font-mono {
+  font-family: monospace;
+  font-weight: 700;
+}
+
+.bg-white {
+  color: $black;
+  background: $white;
+}
+
+.bg-black {
+  color: $white;
+  background: $black;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
 body {
-  background: white;
+  display: flex;
+  background: #ddd;
   font-family: 'Cassannet Plus';
+
+  margin: 3rem;
+  padding: 0;
+  line-height: 1.5;
+}
+
+.content {
+  margin: auto;
+  color: white;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0.2rem 0.2rem 0rem transparentize($black, 0.5);
+  max-width: 500px;
+}
+
+.block {
+  padding: 1rem 1rem 0.8rem;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0 0 0.5em;
+}
+
+h1 {
+  font-size: 4rem;
+  line-height: 1;
+  margin-bottom: -0.3rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  td {
+    border: 2px solid $black;
+    margin: 0;
+    padding: 0.4rem;
+  }
+}
+
+.bg-img {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.strike {
+  text-decoration: line-through;
+}
+
+.nostrike {
+  text-decoration: none !important;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.small {
+  font-size: 0.8rem;
+  line-height: 1.5;
+}
+
+a {
+  color: inherit;
+}
+
+.bg-black {
+  background: $black;
+}
+
+.border-top-white {
+  border-top: 1px solid $white;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.flex-row {
+  flex-flow: row;
+}
+
+.flex-col {
+  flex-flow: column;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+
+  > div {
+    margin-right: 0.5rem;
+  }
+}
+
+.align-center {
+  align-items: center;
+}
+
+.iframe-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%;
+}
+
+.iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.vignette {
+  display: block;
+  width: 200px;
+  height: auto;
+  object-fit: contain;
+  filter: saturate(0) contrast(2);
+}
+
+.vignette-sm {
+  width: 100px;
+}
+
+.w-75 {
+  width: 65%;
+}
+
+.mb-0  {
+  margin-bottom: 0;
 }

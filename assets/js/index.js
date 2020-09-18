@@ -1,10 +1,5 @@
-function component() {
-  const element = document.createElement('div');
+const init = () => {
+  console.log("you're so curious");
+};
 
-  // Lodash, currently included via a script, is required for this line to work
-  element.innerHTML = 'Hello webpack';
-
-  return element;
-}
-
-document.body.appendChild(component());
+document.addEventListener('DOMContentLoaded', init);
