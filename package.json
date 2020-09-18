@@ -6,6 +6,7 @@
   "scripts": {
     "watch": "webpack --watch",
     "build": "webpack",
+    "deploy": "rsync -avzh ./* 'jminguely@ssh-jminguely.alwaysdata.net:www/new.cinq.band/'",
     "lint": "eslint assets -c .eslintrc.json --ext js"
   },
   "keywords": [],
@@ -32,6 +33,7 @@
     "webpack-cli": "^3.3.12"
   },
   "dependencies": {
+    "bootstrap": "^4.5.2",
     "file-loader": "^6.0.0",
     "filemanager-webpack-plugin": "^2.0.5",
     "masonry-layout": "^4.2.2",

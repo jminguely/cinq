@@ -1,3 +1,28 @@
+html {
+  box-sizing: border-box;
+  -ms-overflow-style: scrollbar;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';
+
+@import '~bootstrap/scss/root';
+@import '~bootstrap/scss/reboot';
+@import '~bootstrap/scss/type';
+@import '~bootstrap/scss/grid';
+@import '~bootstrap/scss/images';
+@import '~bootstrap/scss/utilities/display';
+@import '~bootstrap/scss/utilities/flex';
+@import '~bootstrap/scss/utilities/spacing';
+@import '~bootstrap/scss/utilities/text';
+
 @font-face {
   font-family: 'Cassannet Plus';
   src: url('../fonts/CassannetPlus.woff2') format('woff2'),
@@ -47,6 +72,9 @@ body {
   margin: 3rem;
   padding: 0;
   line-height: 1.5;
+  @include media-breakpoint-down(sm) {
+    margin: 1rem;
+  }
 }
 
 .content {
@@ -59,7 +87,7 @@ body {
 }
 
 .block {
-  padding: 1rem 1rem 0.8rem;
+  padding: 1.5rem;
 }
 
 h1,
@@ -67,21 +95,50 @@ h2,
 h3,
 h4 {
   margin: 0 0 0.5em;
+  line-height: 1;
+  font-weight: 700 !important;
 }
 
 h1 {
   font-size: 4rem;
-  line-height: 1;
   margin-bottom: -0.3rem;
+
+  @include media-breakpoint-down(sm) {
+    font-size: 3rem;
+  }
+}
+
+h2 {
+  @include media-breakpoint-down(sm) {
+    font-size: 1.5rem;
+  }
+}
+h4 {
+  @include media-breakpoint-down(sm) {
+    font-size: 1rem;
+  }
 }
 
 table {
   width: 100%;
   border-collapse: collapse;
+
+  tr:first-child td {
+    border-top: 0;
+  }
+
   td {
     border: 2px solid $black;
     margin: 0;
     padding: 0.4rem;
+
+    &:first-child  {
+      border-left: 0;
+    }
+
+    &:last-child  {
+      border-right: 0;
+    }
   }
 }
 
@@ -119,6 +176,15 @@ table {
 
 a {
   color: inherit;
+  text-decoration: underline;
+}
+
+.bg-black a:hover {
+  color: $white;
+}
+
+.bg-white a:hover {
+  color: $black;
 }
 
 .bg-black {
@@ -127,26 +193,6 @@ a {
 
 .border-top-white {
   border-top: 1px solid $white;
-}
-
-.d-flex {
-  display: flex;
-}
-
-.flex-row {
-  flex-flow: row;
-}
-
-.flex-col {
-  flex-flow: column;
-}
-
-.justify-content-between {
-  justify-content: space-between;
-
-  > div {
-    margin-right: 0.5rem;
-  }
 }
 
 .align-center {
@@ -172,20 +218,7 @@ a {
 
 .vignette {
   display: block;
-  width: 200px;
   height: auto;
   object-fit: contain;
   filter: saturate(0) contrast(2);
-}
-
-.vignette-sm {
-  width: 100px;
-}
-
-.w-75 {
-  width: 65%;
-}
-
-.mb-0  {
-  margin-bottom: 0;
 }

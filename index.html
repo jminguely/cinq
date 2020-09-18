@@ -33,13 +33,16 @@
       content="/dist/favicon/browserconfig.xml"
     />
     <meta name="theme-color" content="#ffffff" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
 
   <body>
     <script src="/dist/main.js"></script>
 
     <div class="content grid">
-      <div class="block bg-black d-flex flex-row justify-content-between">
+      <div
+        class="block bg-white d-flex flex-row justify-content-between align-items-center"
+      >
         <h1>CINQ</h1>
         <div class="small">
           <a target="_blank" href="https://www.facebook.com/cinqband"
@@ -55,20 +58,35 @@
           >
         </div>
       </div>
+      <div class="block bg-black d-flex justify-content-between">
+        <h2 class="mb-0">CINQ EST AMOUR</h2>
+        <span>
+          <img src="/dist/img/love.svg" />
+        </span>
+      </div>
       <div class="bg-white block">
-        <div></div>
-
-        <div class="d-flex flex-row justify-content-between">
-          <div>
-            <h2>VOLUME 2</h2>
+        <div class="row pb-4">
+          <div class="col-12"></div>
+          <div class="col-md-7">
             <p>
               Éveilleurs de consciences et créateurs d'un rap puissant teinté
               autant de hip-hop, de jazz que de trap, les membres de Cinq
               rendent superflues les barrières entre les genres.
             </p>
           </div>
-          <img class="vignette" src="/dist/img/cinq_2_monochrome_black.png" />
+          <div class="col-md-5">
+            <img
+              class="img-fluid p-5 p-md-0"
+              src="/dist/img/cinq_2_monochrome_black.png"
+            />
+          </div>
         </div>
+      </div>
+      <div class="block bg-black d-flex justify-content-between">
+        <h2 class="mb-0">CINQ EST ENFANCE</h2>
+        <span>
+          <img src="/dist/img/triangle.svg" />
+        </span>
       </div>
       <div>
         <div class="iframe-container">
@@ -83,8 +101,17 @@
           ></iframe>
         </div>
       </div>
+      <div class="block bg-black d-flex justify-content-between">
+        <h2 class="mb-0">CINQ EST ENSEMBLE</h2>
+        <span>
+          <img src="/dist/img/lines.svg" />
+        </span>
+      </div>
       <div class="bg-white">
         <table class="font-mono">
+          <tr>
+            <td>&nbsp;</td>
+          </tr>
           <tr>
             <td class="text-right"></td>
             <td class="bg-black" colspan="3">
@@ -185,7 +212,7 @@
             <td>15.01.2021</td>
             <td>-</td>
             <td>
-              QKC, Neuchatel
+              À communiquer
             </td>
           </tr>
           <tr>
@@ -193,7 +220,7 @@
             <td>16.01.2021</td>
             <td>-</td>
             <td>
-              Tour Vagabonde, Fribourg
+              À communiquer
             </td>
           </tr>
           <tr>
@@ -201,66 +228,60 @@
             <td>23.01.2021</td>
             <td>-</td>
             <td>
-              Galeries du sauvage, Porrentruy
+              À communiquer
             </td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
           </tr>
         </table>
       </div>
-      <div class="block bg-black">
-        <h2>Discographie</h2>
-        <div class="d-flex flex-row justify-content-between">
-          <div>
-            <h3>E.P. Volume 1</h3>
-            <ul>
-              <li>Apple Music</li>
-              <li>YouTube Music</li>
-              <li>Spotify</li>
-              <li>
-                <a target="_blank" href="https://cinq.bandcamp.com/releases"
-                  >Bandcamp</a
-                >
-              </li>
-            </ul>
-          </div>
-          <a target="_blank" href="https://cinq.bandcamp.com/releases"
-            ><img class="vignette" src="/dist/img/cinq_vol_1.jpg"
-          /></a>
-        </div>
+      <div class="block bg-black d-flex justify-content-between">
+        <h2 class="mb-0">CINQ EST MUSIQUE</h2>
+        <span>
+          <img src="/dist/img/polygon.svg" />
+        </span>
       </div>
       <div class="block bg-white">
-        <div class="d-flex flex-row justify-content-between">
-          <div>
-            <h3>E.P. Volume 2</h3>
-            <ul>
-              <li>Apple Music</li>
-              <li>YouTube Music</li>
-              <li>Spotify</li>
-              <li>
-                <a target="_blank" href="https://cinq.bandcamp.com/releases"
-                  >Bandcamp</a
-                >
-              </li>
-            </ul>
+        <div class="row">
+          <div class="col-7">
+            <h3 class="h4">E.P. Volume 1</h3>
+
+            <a target="_blank" href="https://cinq.bandcamp.com/releases"
+              >Ecouter sur Bandcamp</a
+            >
           </div>
-          <img class="vignette" src="/dist/img/cinq_vol_1.jpg" />
+          <div class="col-5">
+            <a target="_blank" href="https://cinq.bandcamp.com/releases"
+              ><img class="vignette img-fluid" src="/dist/img/cinq_vol_1.jpg"
+            /></a>
+          </div>
         </div>
       </div>
-      <div
-        class="block bg-black d-flex flex-row justify-content-between align-center"
-      >
-        <div>
-          <h3 class="mb-0">Contact</h3>
-          <a class="font-mono" href="mailto:5@cinq.band">5@cinq.band</a>
-        </div>
-        <img
-          class="vignette vignette-sm"
-          src="/dist/img/cinq_1_monochrome_white.png"
-        />
-        <div class="text-right">
-          <h3 class="mb-0">Booking</h3>
-          <a class="font-mono" href="mailto:booking@cinq.band"
-            >booking@cinq.band</a
-          >
+
+      <div class="block bg-black d-flex">
+        <div class="row py-3 d-flex align-items-center">
+          <div class="col-7">
+            <div class="mb-4">
+              <h3 class="h4 mb-1">Contact</h3>
+              <a class="font-mono" href="mailto:5@cinq.band">5@cinq.band</a>
+            </div>
+            <div class="mb-2 mb-md-0">
+              <h3 class="h4 mb-1">Booking</h3>
+              <a class="font-mono" href="mailto:booking@cinq.band"
+                >booking@cinq.band</a
+              >
+            </div>
+          </div>
+          <div class="col-5">
+            <img
+              class="img-fluid"
+              src="/dist/img/cinq_1_monochrome_white.png"
+            />
+          </div>
         </div>
       </div>
     </div>
