@@ -27,7 +27,6 @@ module.exports = {
         },
       ],
     }),
-
   ],
   output: {
     filename: 'main.js',
@@ -55,7 +54,7 @@ module.exports = {
         loader: 'url-loader?limit=1024&name=fonts/[name].[ext]',
       },
       {
-        test: /\.(jpg|jpeg|gif|png)$/,
+        test: /\.(jpg|jpeg|gif|png|mp4)$/,
         exclude: /node_modules/,
         loader: 'url-loader?limit=1024',
       },
