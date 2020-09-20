@@ -44,6 +44,11 @@ html {
 $white: #fff;
 $black: #333;
 
+.logo {
+  max-width: 150px;
+  height: auto;
+}
+
 .font-mono {
   font-family: monospace;
   font-weight: 700;
