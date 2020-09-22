@@ -6,7 +6,7 @@
   "scripts": {
     "watch": "webpack --watch",
     "build": "webpack",
-    "deploy": "rsync -avzh ./* 'jminguely@ssh-jminguely.alwaysdata.net:www/new.cinq.band/'",
+    "deploy": "rsync -avzh ./* 'jminguely@ssh-jminguely.alwaysdata.net:www/cinq.band/'",
     "lint": "eslint assets -c .eslintrc.json --ext js"
   },
   "keywords": [],
