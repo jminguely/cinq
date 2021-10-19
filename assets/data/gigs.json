@@ -1,0 +1,53 @@
+[
+  {
+    "date": "08.11.2019",
+    "title": "Bikini Test, Chaux-de-Fonds"
+  },
+  {
+    "date": "09.11.2019",
+    "title": "Brasserie BFM, Saignelégier"
+  },
+  {
+    "date": "13.12.2019",
+    "title": "Le Mouton Noir, Fribourg"
+  },
+  {
+    "date": "28.12.2019",
+    "title": "Pas sorti de l'auberge, Lausanne"
+  },
+  {
+    "date": "24.09.2020",
+    "title": "Le Romandie, Lausanne",
+    "cancelled": true
+  },
+  {
+    "date": "26.09.2020",
+    "title": "Bikini Test, Chaux-de-Fonds"
+  },
+  {
+    "date": "02.10.2020",
+    "title": "ebullition, Bulle"
+  },
+  {
+    "date": "04.10.2020",
+    "title": "le balkkon, Neuchatel"
+  },
+  {
+    "date": "16.01.2021",
+    "title": "La Tour Vagabonde, Fribourg",
+    "cancelled": true
+  },
+  {
+    "date": "30.07.2021",
+    "title": "Riposte Festival, Lausanne"
+  },
+  {
+    "date": "07.08.2021",
+    "title": "hors tribu, Motiers"
+  },
+  {
+    "date": "15.01.2022",
+    "title": "Galerie du Sauvage, Porrentruy",
+    "link": "https://www.facebook.com/galerieDuSauvage/"
+  }
+]
