@@ -12,6 +12,13 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@master
+
+      - name: 🧶 Yarn
+        run: yarn
+
+      - name: 🛠 Build
+        run: yarn build
+
       - name: RSync
         id: deploy
         uses: Pendect/action-rsyncer@v1.1.0

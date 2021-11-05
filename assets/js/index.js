@@ -1,5 +1,4 @@
-const randSeed = Math.random();
-const gigs = require(`../data/gigs.json?cache=${randSeed}`);
+const gigs = require('../data/gigs.json');
 
 function parseDate(input) {
   const parts = input.match(/(\d+)/g);
