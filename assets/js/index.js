@@ -1,4 +1,5 @@
-const gigs = require('../data/gigs.json');
+const randSeed = Math.random();
+const gigs = require(`../data/gigs.json?cache=${randSeed}`);
 
 function parseDate(input) {
   const parts = input.match(/(\d+)/g);
@@ -8,7 +9,6 @@ function parseDate(input) {
 
 const init = () => {
   console.log("you're so curious");
-  console.log(gigs);
 
   const refTable = document.getElementById('table-gigs');
 
