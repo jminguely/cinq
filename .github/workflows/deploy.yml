@@ -28,5 +28,5 @@ jobs:
           flags: '-avzr --delete'
           options: ''
           ssh_options: ''
-          src: '/*'
+          src: '/dist/*'
           dest: 'jminguely@ssh-jminguely.alwaysdata.net:www/cinq.band'

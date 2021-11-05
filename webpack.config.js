@@ -16,6 +16,10 @@ module.exports = {
         {
           copy: [
             {
+              source: path.join(__dirname, 'index.html'),
+              destination: path.join(__dirname, 'dist/index.html'),
+            },
+            {
               source: path.join(__dirname, 'assets/img'),
               destination: path.join(__dirname, 'dist/img'),
             },
