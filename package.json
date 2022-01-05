@@ -9,6 +9,9 @@
     "deploy": "rsync -avzh ./* 'jminguely@ssh-jminguely.alwaysdata.net:www/cinq.band/'",
     "lint": "eslint assets -c .eslintrc.json --ext js"
   },
+  "engines": {
+    "node": "12.x.x"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
